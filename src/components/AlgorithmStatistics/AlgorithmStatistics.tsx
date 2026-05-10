@@ -11,9 +11,14 @@ interface AlgorithmStatisticsProps {
 }
 
 const PALETTE = [
-  '#3b82f6', '#10b981', '#f59e0b', '#ef4444',
-  '#8b5cf6', '#06b6d4', '#f97316', '#84cc16',
-  '#ec4899', '#14b8a6', '#a855f7', '#eab308',
+    '#3b82f6', '#10b981', '#f59e0b', '#ef4444',
+    '#8b5cf6', '#06b6d4', '#f97316', '#84cc16',
+    '#ec4899', '#14b8a6', '#a855f7', '#eab308',
+    '#0ea5e9', '#22c55e', '#f43f5e', '#d946ef',
+    '#fb923c', '#a3e635', '#38bdf8', '#4ade80',
+    '#c084fc', '#fbbf24', '#f87171', '#34d399',
+    '#818cf8', '#2dd4bf', '#fb7185', '#a78bfa',
+    '#facc15', '#86efac', '#67e8f9', '#fca5a5',
 ];
 
 function formatComparisons(n: number): string {
