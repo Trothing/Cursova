@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@300;400;500&display=swap');
+
+:root {
+  --bg: #0f172a;
+  --bg-elevated: #1e293b;
+  --bg-surface: #162032;
+  --bg-hover: rgba(255, 255, 255, 0.04);
+  --bg-active: rgba(37, 99, 235, 0.1);
+
+  --border: #1e293b;
+  --border-strong: #334155;
+  --border-accent: rgba(37, 99, 235, 0.5);
+
+  --text-1: #f1f5f9;
+  --text-2: #94a3b8;
+  --text-3: #475569;
+
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
+  --accent-dim: rgba(37, 99, 235, 0.12);
+  --accent-text: #93c5fd;
+
+  --success: #10b981;
+  --success-dim: rgba(16, 185, 129, 0.1);
+  --error: #f43f5e;
+  --error-dim: rgba(244, 63, 94, 0.1);
+  --warn: #f59e0b;
+  --warn-dim: rgba(245, 158, 11, 0.1);
+
+  --font-ui: system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
+  --font-mono: 'Geist Mono', ui-monospace, 'SF Mono', 'Fira Code', monospace;
+
+  --radius-sm: 4px;
+  --radius: 6px;
+  --radius-lg: 8px;
+
+  --ease: 0.15s ease;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+button { border: none; background: none; cursor: pointer; font: inherit; }
+
+.app {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: var(--bg);
+  font-family: var(--font-ui);
+  font-size: 13px;
+  color: var(--text-1);
+  line-height: 1.5;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.canvasArea {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  border-left: 1px solid var(--border);
+}
+
+.bottomBar {
+  display: flex;
+  height: 192px;
+  flex-shrink: 0;
+  border-top: 1px solid var(--border);
+  border-left: 1px solid var(--border);
+}
+
+.statsArea {
+  flex: 1;
+  flex-shrink: 0;
+  border-right: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.logArea {
+  flex: 1.5;
+  min-width: 0;
+  overflow: hidden;
+}
